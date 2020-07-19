@@ -25,14 +25,15 @@
 
           <%= render "shared/application_nav" %>
 
-          <%= login_helper %>
 
           <%= yield %>
 
-          <%= copyright_generator %>
+        
           <% if session[:source] %>
             <p>Thanks for visiting me from <%= session[:source] %></p>
           <% end %>
+
+        <%= render "shared/application_footer" %>
         </div>
 
       </div>
