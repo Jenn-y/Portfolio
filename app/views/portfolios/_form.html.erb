@@ -1,27 +1,37 @@
 <%= form_for(@portfolio_item) do |f| %>
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+    </div>
 
-  <div class="field">
-    <%= f.label :subtitle %>
-    <%= f.text_field :subtitle %>
+    <div class="form-group">
+      <%= f.label :subtitle %>
+      <%= f.text_field :subtitle, class: 'form-control' %>
+    </div>
   </div>
-
-  <div class="field">
+  <div class="col-md-6">
+    <div class="form-group">
     <%= f.label :body %>
-    <%= f.text_area :body %>
+    <%= f.text_area :body, class: 'form-control', rows: 13 %>
   </div>
+  </div>
+</div>
 
-  <ul>
+<hr>
+
+<div class="col-md-12">
+  <div>
     <%= f.fields_for :technologies do |technology| %>
-    <li><%= technology.label :name %></li>
-    <li><%= technology.text_field :name %></li>
+    <div class='form-group'>
+      <%= technology.label :name %>
+      <%= technology.text_field :name, class: 'form-control' %></div>
     <% end %>
-  </ul>
-
-  <div class="actions">
-    <%= f.submit %>
   </div>
+
+  <div class="form-group">
+    <%= f.submit "Save the Portfolio Item", class: 'btn btn-primary btn-block' %>
+  </div>
+</div>
 <% end %>
