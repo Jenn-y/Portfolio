@@ -1,5 +1,10 @@
-<h1>Portfolio items</h1>
+<div class="album text-muted">
+  <div class="container">
 
-<%= link_to "Create new item", new_portfolio_url if logged_in?(:site_admin) %>
+    <div class="row">
 
-<%= render partial: "portfolio_item", collection: @portfolio_items %>
+      <%= render partial: "portfolio_item", collection: @portfolio_items %>
+
+    </div>
+  </div>
+</div>
