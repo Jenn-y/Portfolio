@@ -26,7 +26,12 @@
 
         <div class="cover-container">
 
-          <div id="background"></div>
+
+          <%= video_tag "HardDrivePhotojpeg.mp4", 
+                        autoplay: :autoplay, 
+                        loop: :loop, 
+                        muted: :muted, 
+                        class: "background" %>
 
           <%= render "shared/application_nav" %>
 
