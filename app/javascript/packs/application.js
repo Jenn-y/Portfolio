@@ -6,9 +6,9 @@
 require("@rails/ujs").start()
 //= require cable
 require("turbolinks").start()
+require('jquery')
 require("@rails/activestorage").start()
 require("channels")
-require('jquery')
 
 // jquery
 import $ from 'jquery';
