@@ -205,3 +205,20 @@ body {
 .app-footer {
   color: white;
 }
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 30px;
+}
+
+.profile-image {
+  border: 1px solid grey;
+}
+
+.app-card-container a {
+  color: green;
+}
