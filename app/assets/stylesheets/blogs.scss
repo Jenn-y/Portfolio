@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Montserrat', sans-serif;
   color: #555;
 }
 
@@ -22,7 +22,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-weight: normal;
   color: #333;
 }
@@ -184,4 +184,12 @@ h6, .h6 {
 .comment-attribution {
   font-size: 0.8em;
   font-style: italic;
+}
+
+.blogcrumb a {
+  margin: 0 10px 0 10px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
 }
