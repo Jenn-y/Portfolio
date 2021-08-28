@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    @copyright = DjulovicViewTool::Renderer.copyright 'Dzenita Djulovic', 'All rights reserved'
+    @copyright = DjulovicViewTool::Renderer.copyright '', 'All rights reserved'
   end
 
   def nav_items
@@ -33,10 +33,6 @@ module ApplicationHelper
       {
         url: contact_path,
         title: "Contact"
-      },
-      {
-        url: blogs_path,
-        title: "Blog"
       },
       {
         url: portfolios_path,
@@ -63,7 +59,7 @@ end
 module DjulovicViewTool
   class Renderer
     def self.copyright name, msg
-      "&copy; #{Time.now.year} | <b>#{name}</b> #{msg}".html_safe
+      "&copy; #{Time.now.year} | #{msg}".html_safe
     end
   end
 end
